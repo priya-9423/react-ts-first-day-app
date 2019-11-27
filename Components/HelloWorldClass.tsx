@@ -39,7 +39,7 @@ export default class HelloWorldClass extends Component{
 const arr1 = this.state.arr;
 this.state.arr.push('test');
 
- this.setState({arr:arr1 });
+ console.log('arr:',this.state.arr);
  console.log(arr1);
   //   this.setState({
   //     ...this.state,

@@ -40,7 +40,7 @@ const arr1 = this.state.arr;
 this.state.arr.push('test');
 
  this.setState({arr:arr1 });
- console.log(arr1);
+ console.log('arr:',this.state.arr);
 
   //   this.setState({
   //     ...this.state,
