@@ -9,7 +9,8 @@ export default class HelloWorldClass extends Component{
     this.state = {
       firstName : 'Priyanka',
       lastName : 'Gat',
-      salary : 100
+      salary : 100,
+            arr: ['test1','test2'] 
     };
 
     this.IncreametSalary = this.IncreametSalary.bind(this);
@@ -21,6 +22,7 @@ export default class HelloWorldClass extends Component{
       <div>First Name : {this.state.firstName}</div>
       <div>Last Name : {this.state.lastName}</div>
       <div>Salary : {this.state.salary}</div>
+          <div> arr:{this.state.arr} </div>
       <button onClick = {this.IncreametSalary}> Submit </button>
     </div>
     )
@@ -34,11 +36,11 @@ export default class HelloWorldClass extends Component{
     //   lastName : 'Gat',
     //   salary : this.state.salary+100
     // });
+const arr1 = this.state.arr;
+this.state.arr.push('test');
 
- this.setState((state) =>({salary : state.salary+100}));
-
- this.setState((state) =>({salary : state.salary+100}));
-
+ this.setState({arr:arr1 });
+ console.log(arr1);
   //   this.setState({
   //     ...this.state,
   //     salary : this.state.salary+100
